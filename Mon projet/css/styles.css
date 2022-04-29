@@ -1,0 +1,32 @@
+                        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
+                        h1 {
+                            font-family: 'open sans';
+                            color: darkblue;
+                            text-align: center;
+                            text-transform: uppercase;
+                        }
+                        
+                        menu a {
+                            text-decoration: none;
+                            border: 1px solid blue;
+                            margin: 5px;
+                            padding: 5px;
+                            background-color: burlywood;
+                            border-radius: 3px;
+                        }
+                        
+                        .italique {
+                            font-family: cursive;
+                        }
+                        
+                        #soins {
+                            font-size: 30px;
+                        }
+                        
+                        #elevages {
+                            font-size: 30px;
+                        }
+                        
+                        #accessoires {
+                            font-size: 30px;
+                        }
