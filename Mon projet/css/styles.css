@@ -1,23 +1,50 @@
                         @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
                         h1 {
-                            font-family: 'open sans';
-                            color: darkblue;
+                            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                            color: cadetblue;
                             text-align: center;
                             text-transform: uppercase;
+                            margin-top: 50px;
+                            
                         }
                         
-                        menu a {
-                            text-decoration: none;
-                            border: 1px solid blue;
-                            margin: 5px;
-                            padding: 5px;
-                            background-color: burlywood;
-                            border-radius: 3px;
+                        
+                        .tic{color: white;
+                          margin-bottom: 40px;
                         }
+                        
+        
+                        
+                            
+                        
                         
                         .italique {
                             font-family: cursive;
+                            text-align: center;
+                            font-size: 30px;
+                            margin-top: 50px;
+                            
+                            
+                            
+                            
+            
+                            
+                    
+                
+                        
+            
+                      
                         }
+                        
+                        
+                        .normal{text-align: center;}
+                        
+                        
+                        
+                        
+                       
+            
+                
                         
                         #soins {
                             font-size: 30px;
@@ -30,3 +57,95 @@
                         #accessoires {
                             font-size: 30px;
                         }
+                        * Layout */
+html {display: flex; flex-direction: column;} /* IE fix */
+body { background-color:rgb(156, 119, 138) ;
+    display: flex; /* crée un contexte flex pour ses enfants */
+    flex-direction: column; /* affichage vertical */
+    min-height: 100vh; /* toute la hauteur du viewport (compatible IE9+) */
+  }
+.wrapper {
+  display: block; /* IE fix */
+  flex: 1 1 auto; /* occupe la hauteur restante */
+  display: flex; /* crée un contexte flex pour ses enfants */
+  flex-direction: row; /* affichage horizontal */
+}
+
+.nav1 {
+  width: 100%;
+  background-color:  rgb(12, 82, 153);
+}
+.nav2 {width: 100%;
+  background-color:  rgb(12, 82, 153);}
+
+.navigation{
+    width: 15em;
+    background-color: darkslategrey;
+}
+.content {
+  display: block; /* IE fix */
+  flex: 1; /* occupe la largeur restante */
+}
+
+.pluspetit {font-size: 1em; text-align: center;
+}
+
+.container-fluid{
+  background-color: black;
+}
+/* Responsive */
+
+@media (max-width: 640px) {
+	body {
+  min-height: 0; 
+}
+	.wrapper {
+    flex-direction: column;
+  }
+	.content {
+		flex-basis: auto;
+	}
+  nav {
+    width: auto;
+    order: 1;
+  }
+}
+
+/* Decoration */
+
+.bodyEx {
+	margin: 0;
+	background: #fff;
+	font-family: "Century Gothic", helvetica, arial, sans-serif;
+	font-size: 1.1em;
+}
+header, nav, section, footer {
+	padding: 10px;
+	margin: 0;
+	border: 2px solid rgb(255, 255, 255);
+	border-radius: 10px;
+	color: #fff;
+  
+}
+header {
+
+	background: rgb(12, 82, 153);
+  text-align: center;
+}
+
+nav a {
+  display: block;
+  padding: .5em 1em;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255,255,255,.3);
+}
+section {
+	background: rgb(49, 14, 32);
+}
+.row {padding-right: 40px;}
+footer {
+	background: rgb(30, 39, 12);
+  text-align: center;
+}
+
